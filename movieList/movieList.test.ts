@@ -8,9 +8,9 @@ beforeAll(async () => {
     await driver.get('http://127.0.0.1:5500/movieList/index.html')
 })
 
-// afterAll(async () => {
-//     await driver.quit()
-// })
+afterAll(async () => {
+    await driver.quit()
+})
 
 test('Add Movie to List', async () => {
     let addMovie = await driver.findElement(By.xpath('//input'))
